@@ -98,6 +98,8 @@ class HandTracker():
     def _pad1(x):
         return np.pad(x, ((0,0),(0,1)), constant_values=1, mode='constant')
 
+    def recog_hand_pose(self, pose):
+        return 0
 
     def predict_joints(self, img_norm):
         self.interp_joint.set_tensor(
